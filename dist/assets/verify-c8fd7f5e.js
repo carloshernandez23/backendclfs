@@ -1,0 +1,1 @@
+import"./modulepreload-polyfill-3cfb730f.js";/* empty css            */const n=document.querySelector("#text-info");(async()=>{try{const t=window.location.pathname.split("/")[3],o=window.location.pathname.split("/")[2];await axios.patch(`/api/users/${o}/${t}`),window.location.pathname="/login/"}catch(t){n.innerHTML=t.response.data.error}})();
